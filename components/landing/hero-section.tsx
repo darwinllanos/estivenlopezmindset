@@ -78,7 +78,7 @@ export function HeroSection() {
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
               <div className="aspect-[4/5] bg-secondary relative">
                 <img
-                  src="/estibenHero.png"
+                  src="/EstibenHero.png"
                   alt="Emprendedor exitoso"
                   className="w-full h-full object-cover"
                 />
@@ -87,7 +87,7 @@ export function HeroSection() {
                   <div className="flex items-center gap-4">
                     <div className="h-14 w-14 rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl">
                       <img
-                        src="/perfil.jpg"
+                        src="/Perfil.jpg"
                         alt="Estiven López MindSet"
                         className="w-10 h-10 rounded-full object-cover"
                       />

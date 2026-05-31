@@ -34,7 +34,7 @@ export function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img
-              src="/perfil.jpg"
+              src="/Perfil.jpg"
               alt="Estiven López MindSet"
               className="w-10 h-10 rounded-full object-cover"
             />

@@ -8,21 +8,21 @@ const testimonials = [
   {
     name: "Jero arias",
     role: "Empleado | Ahora vive de los negocios digitales",
-    image: "/JeroArias.png",
+    image: "/jeroarias.png",
     quote: "Pase de no tener absolutamente ni un peso para cenar a vivir en la abundancia, gracias Estiven, por que gracias a ti logre cambiar mi vida y la de mi familia, ahora vivo de los negocios digitales y tengo la libertad financiera que siempre soñé.",
     results: "De no tener para la cena a 3200 USD en un dia"
   },
   {
     name: "Sergio",
     role: "Empleado | Empresario",
-    image: "/sergio.png",
+    image: "/Sergio.png",
     quote: "Gracias a ti, logre cambiar mi vida. El que se pegue a esto sin duda tiene que crecer mucho. La mejor inversion que he hecho",
     results: "La mejor inversión que he hecho"
   },
   {
     name: "Santiago",
     role: "Ventas en la calle | Dropshipper",
-    image: "/santiago.png",
+    image: "/Santiago.png",
     quote: "Conoci a Estiven, logre entrenar con el, fue mi primer mentor mi me llevo a otro nivel en muy poco tiempo",
     results: "De vender celulares en la calle a facturar +600K USD en Dropshipping."
   },

@@ -25,7 +25,7 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg">
                 <img
-                  src="/perfil.jpg"
+                  src="/Perfil.jpg"
                   alt="Estiven López MindSet"
                   className="w-10 h-10 rounded-full object-cover"
                 />
