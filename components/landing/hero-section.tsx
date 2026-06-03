@@ -94,7 +94,7 @@ export function HeroSection() {
                     </div>
                     <div>
                       <p className="font-semibold text-card-foreground">Estiven Lopez</p>
-                      <p className="text-sm text-muted-foreground">Ecommerce | Coach de Vida</p>
+                      <p className="text-sm text-muted-foreground">Ecommerce | Bussines and Mindset Coach</p>
                     </div>
                   </div>
                 </div>
