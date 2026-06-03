@@ -35,14 +35,14 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed text-pretty">
-              Descubre cómo docenas de personas han cambiado su destino financiero 
+              Descubre cómo cientas de personas han cambiado su destino financiero 
               construyendo un negocio con un sistema probado y el 
               acompañamiento de un equipo ganador.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all">
-                  <a href="https://www.estivenlopezmindset.com/offers/ZwNbPPDP/checkout?coupon_code=7DIASOFF">Quiero saber más</a>
+                  <a href="https://www.estivenlopezmindset.com/offers/ZwNbPPDP/checkout">Quiero saber más</a>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
