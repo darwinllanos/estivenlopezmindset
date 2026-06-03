@@ -98,7 +98,7 @@ export function BenefitsSection() {
         <div className="text-center mt-16">
           <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/25">
             <Button className="rounded-full px-6" asChild>
-              <a href="https://www.estivenlopezmindset.com/offers/ZwNbPPDP/checkout?coupon_code=7DIASOFF">Quiero estos beneficios</a>
+              <a href="https://www.estivenlopezmindset.com/offers/ZwNbPPDP/checkout">Quiero estos beneficios</a>
             </Button>
           </Button>
         </div>

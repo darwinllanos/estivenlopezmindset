@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "¿Qué soporte recibiré al unirme?",
-    answer: "Tendrás acceso a: 1) Un mentor personal que te guiará en tus primeros días, 2) Grupo de WhatsApp con el equipo activo 24/7, 3) Entrenamientos semanales en vivo, 4) Biblioteca de recursos y materiales, 5) Eventos presenciales y virtuales mensuales."
+    answer: "Tendrás acceso a: 1) Acceso a estiven en mentorias grupales, 2) grupo de wpp con hermandad y emprendedores que no fallan, 3) Entrenamientos semanales en vivo, 4) Biblioteca de recursos y materiales, 5) Eventos presenciales y virtuales mensuales."
   }
 ];
 

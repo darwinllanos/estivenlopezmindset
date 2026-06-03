@@ -46,7 +46,7 @@ export function StorySection() {
             <div className="space-y-6">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hace 8 años, mi vida era muy diferente. Trabajaba más de 12 horas 
+                  Hace 5 años, mi vida era muy diferente. Trabajaba más de 12 horas 
                   diarias en un empleo que apenas me permitía llegar a fin de mes. 
                   No tenía tiempo para mi familia, vivía estresado y sentía que 
                   mi vida se escapaba entre las manos.

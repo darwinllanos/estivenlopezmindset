@@ -59,7 +59,7 @@ export function HeroSection() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start pt-4">
               <div className="text-center">
-                <p className="text-3xl font-bold text-foreground">Docenas +</p>
+                <p className="text-3xl font-bold text-foreground">100 +</p>
                 <p className="text-sm text-muted-foreground">Vidas transformadas</p>
               </div>
               <div className="text-center">

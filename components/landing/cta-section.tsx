@@ -5,7 +5,7 @@ import React from "react"
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckCircle2, ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, ArrowRight, Instagram } from "lucide-react";
 
 export function CTASection() {
   const [formData, setFormData] = useState({
@@ -14,10 +14,36 @@ export function CTASection() {
     phone: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [formError, setFormError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setFormError("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      setIsLoading(false);
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        setFormError(data?.error || "No se pudo enviar el correo. Intenta de nuevo.");
+        return;
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      setIsLoading(false);
+      setFormError("Error al enviar el correo. Revisa tu conexión y vuelve a intentarlo.");
+    }
   };
 
   return (
@@ -30,20 +56,19 @@ export function CTASection() {
               <div>
                 <p className="text-primary font-medium mb-4">Da el primer paso</p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                  Agenda tu llamada de descubrimiento gratuita
+                  MASTERCLASS GRATUITA
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  En 30 minutos te explicaré cómo funciona el negocio, 
-                  responderé todas tus preguntas y juntos evaluaremos si 
-                  esta oportunidad es para ti. Sin presiones, sin compromisos.
+                  Te explicare paso a paso lo que hice para salir de la pobreza y alcanzar la libertad financiera.
                 </p>
               </div>
 
               <ul className="space-y-4">
                 {[
-                  "Llamada 100% gratuita y sin compromiso",
-                  "Conocerás el plan de compensación completo",
-                  "Resolverás todas tus dudas personalmente",
+                  "+10 MASTERCLASS gratuitas",
+                  "Llevarás tu negocio al siguiente nivel",
+                  "Aprenderas a mejorar tu mentalidad financiera",
+                  "Encuentra a tu mejor versión y alcanza tu libertad",
                   "Recibirás recursos exclusivos por email"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
@@ -56,21 +81,21 @@ export function CTASection() {
               {/* Contact Options */}
               <div className="flex flex-wrap gap-4 pt-4">
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://www.instagram.com/estivenlopezmindset/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-medium hover:opacity-90 transition-opacity"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#515bd4] text-white font-medium hover:opacity-90 transition-opacity shadow-lg shadow-pink-500/20"
                 >
-                  <MessageCircle className="w-5 h-5" />
-                  WhatsApp Directo
+                  <Instagram className="w-5 h-5" />
+                  Instagram Directo
                 </a>
-                <a 
+                {/* <a 
                   href="tel:+1234567890"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   Llamar Ahora
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -79,7 +104,7 @@ export function CTASection() {
               {!isSubmitted ? (
                 <>
                   <h3 className="text-xl font-bold text-card-foreground mb-6">
-                    Reserva tu espacio ahora
+                    MASTERCLASS via email
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
@@ -124,10 +149,17 @@ export function CTASection() {
                         className="h-12 rounded-xl"
                       />
                     </div>
-                    <Button type="submit" className="w-full h-14 text-lg rounded-xl shadow-lg shadow-primary/25">
-                      Agendar mi llamada gratis
+                    <Button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full h-14 text-lg rounded-xl shadow-lg shadow-primary/25"
+                    >
+                      {isLoading ? "Enviando correo..." : "Enviar Masterclass"}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
+                    {formError && (
+                      <p className="text-sm text-destructive text-center">{formError}</p>
+                    )}
                     <p className="text-xs text-muted-foreground text-center">
                       Tus datos están seguros. No compartimos tu información con terceros.
                     </p>
@@ -142,8 +174,7 @@ export function CTASection() {
                     ¡Excelente decisión!
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    Te contactaré en las próximas 24 horas para agendar 
-                    tu llamada de descubrimiento. Revisa tu email y WhatsApp.
+                    Revisa tu email.
                   </p>
                   <p className="text-sm text-primary font-medium">
                     Mientras tanto, sígueme en redes sociales para más contenido de valor.
