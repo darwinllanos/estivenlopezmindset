@@ -32,6 +32,62 @@ const testimonials = [
     image: "/Andres.png",
     quote: "Gracias a estiven logre tener una mayor claridad hacia mis objetivos, ahora cada dia construyo mi mejor version y estoy mas cerca de alcanzar mi objetivo",
     results: "Alineado con su proposito"
+  },
+  {
+    name: "Lucas",
+    role: "Vida normal | Cambiando de estilo de vida",
+    image: "/Lucas.png",
+    quote: "Gracias a Dios el cambio en mi cuerpo una cosa fenomenal y he bajado mas de 14 kilos en mes y medio que llevo aca. Desde que Stiven me explico como medir macros y todo ha sido una locura",
+    results: "Construyendo su marca personal y creciendo cada día"
+  },
+  {
+    name: "Victor",
+    role: "Encontrando su fe | Alineado con su proposito",
+    image: "/General.png",
+    quote: "La sala fenix  es un lugar donde encontre con la fe, ha sido un espacio increible de cambio. Estiven es otra vuelta. Tener a Dios como base, como guia siempre, respetar mi mente, mi cuerpo, mi mente mi alma.",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Brayan",
+    role: "Crecimiento personal | Alineado con su proposito",
+    image: "/General.png",
+    quote: "Es una locura en el popco tiempo que llevo en la sala, la alineacion, sabiduria, conocimiento y accion que transforma, yo solo tengo que agradecer primero a Dios por enviarme el mejor entorno para aprender y ser mejor cada dia, Stiven gracias por crear esta familia tan increible y el contenido de valor",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Robinson",
+    role: "Cambio de mentalidad | Crecimiento personal",
+    image: "/General.png",
+    quote: "La sala fenix para mi es un cambio por completo de la forma en como pensaba de la vida, me ayudo a cuestionarme y a establecer esa obsesion por querer un cambio, invertir en la sala fenix es la mejor decision que tome.",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Nicky",
+    role: "Crecimiento interior | Emprendedor",
+    image: "/General.png",
+    quote: "He ganado aqui aprendizaje, mentalidad, fisico, alineacion, ego fuera! Abri mi marca, cree un negocio del alquiler de vehiculos con la mentalidad que adquiri aqui, afronte la muerte de mi padre hace como 2 meses con gratitud. Todo desde el amor y entendiendo que la respuesta para todo es Dios.",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Steven",
+    role: "Cumbre de su vida | Alineado con su proposito",
+    image: "/General.png",
+    quote: "Me enfoque en entrar a la sala fenix y decidi invertir en mi y he cumplido suenos que eran solo una ilusion hace 3 anos en tan solo 3 meses. Gloria a Dios por colocarme en este entorno tan chimba.",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Felipe",
+    role: "Crecimiento personal",
+    image: "/General.png",
+    quote: "Gracias Stiven por removerme los miedos, por hacerme despertar esa hambre de mejorar cada dia y por impulsarme a trabajar mas por mis metas.",
+    results: "Alineado con su proposito"
+  },
+  {
+    name: "Daniel",
+    role: "Sin dinero | Deudor | Cambiando su mentalidad",
+    image: "/General.png",
+    quote: "Empeze este ano debiendo aproximadamente 6000 dolares en tarjetas de credito que gaste en estupideces y unas de las cosas que me propuse este mes de enero es pagar almenos la mitad de esas deudas y apenas estamos a 12 de enero y ya he pagado 4000 dolares en las tarjetas y otras cosas mas realmente la mentalidad de estiven de que Dios es abundante ayuda muchhoo a seguir adelante apenas estoy iniciando dejando malos habitos y otras cosas pero este ano me he sentido bien conmigo mismo y siento que estoy avanznado. Gracias Stiven.",
+    results: "sentirse bien consigo mismo y avanzando en su camino de crecimiento personal"
   }
 ];
 
